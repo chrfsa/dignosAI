@@ -1,0 +1,74 @@
+.my-form {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .my-form .card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+  
+  .my-form .card-header {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .my-form .card-header h3 {
+    margin: 0;
+    padding: 10px 0;
+  }
+  
+  .my-form .form-label {
+    font-weight: bold;
+  }
+  
+  .my-form .form-control {
+    border-radius: 5px;
+  }
+  
+  .my-form .btn-success {
+    background-color: #4CAF50;
+    border: none;
+  }
+  
+  .my-form .btn-success:hover {
+    background-color: #45a049;
+  }
+  .form-control-spacing {
+    margin-bottom: 15px; /* Ajustez la valeur pour augmenter ou diminuer l'espace */
+  }
+  .alert-danger {
+    color: red;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+  }
+  /* form.component.css */
+.spinner-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.7);
+  z-index: 1000;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #0056b3;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+  

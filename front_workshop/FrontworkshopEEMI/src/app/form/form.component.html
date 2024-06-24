@@ -1,0 +1,61 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()" class="row g-3 my-form">
+  <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+    <div class="card-header text-center">
+      <h3>Une IA te diagnostic ?</h3>
+    </div>
+    <div class="card-body">
+      <div *ngIf="showAlert" class="alert alert-danger">
+        {{ errorMessage }}
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="firstName" class="form-label">Nom <span class="text-danger">*</span></label>
+          <input type="text" id="firstName" formControlName="nom" class="form-control" placeholder="Entrez votre nom" required />
+          <div *ngIf="nom?.invalid && (nom?.dirty || nom?.touched)" class="text-danger">
+            <small>Ce champ est requis.</small>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="age" class="form-label">Âge <span class="text-danger">*</span></label>
+          <input type="number" id="age" formControlName="age" class="form-control" placeholder="Entrez votre âge" required />
+          <div *ngIf="age?.invalid && (age?.dirty || age?.touched)" class="text-danger">
+            <small>Ce champ est requis et doit être un nombre positif.</small>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="weight" class="form-label">Poids <span class="text-danger">*</span></label>
+          <input type="number" id="weight" formControlName="poids" class="form-control" placeholder="Entrez votre poids" required />
+          <div *ngIf="poids?.invalid && (poids?.dirty || poids?.touched)" class="text-danger">
+            <small>Ce champ est requis et doit être un nombre positif.</small>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="chronicDisease" class="form-label">Possédez-vous une maladie chronique ?</label>
+          <select id="chronicDisease" formControlName="patient_history" class="form-select">
+            <option value="non">Non</option>
+            <option value="Diabète">Diabète</option>
+            <option value="Hypertension artérielle">Hypertension artérielle</option>
+            <option value="Maladie cardiaque">Maladie cardiaque</option>
+            <option value="Asthme">Asthme</option>
+            <option value="Maladie pulmonaire obstructive chronique (MPOC)">Maladie pulmonaire obstructive chronique (MPOC)</option>
+            <option value="Arthrite">Arthrite</option>
+            <option value="Insuffisance rénale chronique">Insuffisance rénale chronique</option>
+            <option value="Hépatite chronique">Hépatite chronique</option>
+            <option value="Sclérose en plaques">Sclérose en plaques</option>
+            <option value="Cancer">Cancer</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="symptoms" class="form-label">Symptômes <span class="text-danger">*</span></label>
+          <textarea id="symptoms" formControlName="symptoms" class="form-control form-control-spacing" rows="5" placeholder="Décrivez vos symptômes" required></textarea>
+          <div *ngIf="symptoms?.invalid && (symptoms?.dirty || symptoms?.touched)" class="text-danger">
+            <small>Ce champ est requis.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer text-center">
+      <button class="btn btn-success" type="submit">Obtenir mon rapport</button>
+    </div>
+  </div>
+</form>

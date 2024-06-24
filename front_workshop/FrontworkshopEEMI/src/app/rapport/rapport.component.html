@@ -1,0 +1,14 @@
+<div *ngIf="reportData; else noData">
+    <h2>Résultats du rapport</h2>
+    <pre [innerHTML]="formatReportData(reportData)"></pre> <!-- Utilisez innerHTML pour formater les données -->
+    
+    <!-- Bouton pour générer le PDF -->
+    <!-- <button (click)="generatePDF()">Télécharger le PDF</button>-->
+    <div class="card-footer text-center">
+        <button class="btn btn-success" (click)="generatePDF()">Télécharger le PDF</button>
+      </div>
+  </div>
+  <ng-template #noData>
+    <p>Aucune donnée disponible.</p>
+  </ng-template>
+  

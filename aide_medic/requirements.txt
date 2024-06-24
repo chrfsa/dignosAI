@@ -1,0 +1,13 @@
+langchain_openai
+langchain
+crewai
+langchain_groq
+crewai[tools]
+langchain_community
+langchain_openai
+langchain_groq
+datasets
+numpy
+session_info
+streamlit
+PyPDF2

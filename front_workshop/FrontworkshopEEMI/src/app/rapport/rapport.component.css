@@ -1,0 +1,9 @@
+pre {
+    white-space: pre-wrap; /* Permettre les sauts de ligne */
+    word-wrap: break-word; /* Empêche les mots longs de déborder */
+    background-color: #f8f8f8; /* Ajouter un fond pour mieux lire */
+    padding: 10px;
+    border: 1px solid #ddd; /* Bordure légère pour le cadre */
+    border-radius: 5px; /* Coins arrondis */
+  }
+  
