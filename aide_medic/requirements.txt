@@ -11,3 +11,5 @@ numpy
 session_info
 streamlit
 PyPDF2
+flask
+flask_cors

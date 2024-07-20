@@ -6,7 +6,7 @@ from langchain_openai import ChatOpenAI
 from langchain.agents import load_tools
 from crewai import Agent, Task, Crew
 from crewai.project import crew, agent, task, CrewBase
-from tools.searsh_tools import SearchTools
+
 from tasks import MedicalTasks
 from crewai_tools import tool
 from langchain_community.tools import DuckDuckGoSearchRun
@@ -26,7 +26,7 @@ class MedicalCrew:
     agents_config = "config/medical/medical_agents_config.yaml"
 
     def __init__(self, nom, age, poids, symptoms, patient_history) -> None:
-        self.gpt4_llm = ChatOpenAI(model="gpt-4", temperature=0.7)
+        # self.gpt4_llm = ChatOpenAI(model="gpt-4", temperature=0.7)
         self.groc_llm=ChatGroq(temperature = 0, model_name="llama3-70b-8192") 
         self.nom = nom
         self.age = age

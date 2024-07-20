@@ -51,7 +51,7 @@ class MedicalTasks:
                 **Note**: {self.__tip_section()}
         """
             ),
-            expected_output="Liste des diagnostics potentiels",
+            expected_output="Liste des diagnostics potentiels, recommendations, conseils",
             agent=agent,
         )
 
