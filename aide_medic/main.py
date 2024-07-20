@@ -2,19 +2,14 @@
 import os
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from langchain_openai import ChatOpenAI
 from langchain.agents import load_tools
 from crewai import Agent, Task, Crew
 from crewai.project import crew, agent, task, CrewBase
 
 from tasks import MedicalTasks
-from crewai_tools import tool
-from langchain_community.tools import DuckDuckGoSearchRun
-search_search = DuckDuckGoSearchRun()
-import os
-
-from groq import Groq
 from dotenv import load_dotenv
+from crewai_tools import SerperDevTool
+
     
 load_dotenv()
 from langchain_groq import ChatGroq 
@@ -34,10 +29,12 @@ class MedicalCrew:
         self.symptoms = symptoms
         self.patient_history = patient_history
         self.human_tools = load_tools(["human"])
+        self.search_tool = SerperDevTool()
     @agent
     def doctor_agent(self) -> Agent:
         return Agent(
             config=self.agents_config["agents"]["doctor_agent"],
+            tools=[self.search_tool],
             llm=self.groc_llm,
         )
 
