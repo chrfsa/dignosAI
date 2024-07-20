@@ -64,7 +64,7 @@ Assurez-vous que toutes les variables d'environnement nécessaires sont configur
     ```bash
     python main.py
     ```
-2. ***Démarrer me frontend**
+2. **Démarrer me frontend**
 
     ``bash
     ng serve
