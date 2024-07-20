@@ -31,8 +31,8 @@ Avant de commencer, assurez-vous d'avoir installé les éléments suivants :
 1. **Clonez le Répertoire du Projet**
 
    ```bash
-   git clone https://votre-repository-url.git
-   cd votre-repository
+   git clone https://github.com/chrfsa/dignosAI
+   cd diagnosAI/back
    ```
 2. **Créez et Activez un Environnement Virtuel**
 
@@ -52,7 +52,7 @@ Assurez-vous que toutes les variables d'environnement nécessaires sont configur
 
 1. **Naviguer vers le répertoire du frontend**
     ```bash
-    cd 
+    cd front
     ```
 2. **installer les dépendences**
     ```bash
