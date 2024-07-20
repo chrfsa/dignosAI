@@ -59,17 +59,17 @@ Assurez-vous que toutes les variables d'environnement nécessaires sont configur
     npm intall
     ```
 ## Démarrage du projet
-### **Démarrer le backend**
+1. **Démarrer le backend**
 
     ```bash
     python main.py
     ```
-### ***Démarrer me frontend**
+2. ***Démarrer me frontend**
 
     ``bash
     ng serve
     ```
-    
+
 ## Utilisation
 pour utiliser DiagnosAI il faut lancer le back et le front ensemble, apres ouvrez un navigateur web et allez à http://localhost:4200/.
 
