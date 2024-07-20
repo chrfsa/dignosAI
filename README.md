@@ -76,5 +76,5 @@ Le backend analysera les données avec Crew IA et renverra un diagnostic basé s
 
 ### Interface
 
-![Formulaire](aide_medic/dignosai.png)
-![Rapport](aide_medic/rapport.png)
+![Formulaire](back/dignosai.png)
+![Rapport](back/rapport.png)
