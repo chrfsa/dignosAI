@@ -69,7 +69,6 @@ Assurez-vous que toutes les variables d'environnement nécessaires sont configur
     ``bash
     ng serve
     ```
-
 ## Utilisation
 pour utiliser DiagnosAI il faut lancer le back et le front ensemble, apres ouvrez un navigateur web et allez à http://localhost:4200/.
 
