@@ -66,7 +66,7 @@ Assurez-vous que toutes les variables d'environnement nécessaires sont configur
     ```
 2. **Démarrer me frontend**
 
-    ``bash
+    ```bash
     ng serve
     ```
 ## Utilisation
